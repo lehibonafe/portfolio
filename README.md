@@ -55,7 +55,3 @@ This portfolio reflects my approach to technology and professional development:
 - **Secure Network Architecture**: Implemented bastion host patterns with NAT gateways for secure cloud access
 - **Infrastructure as Code**: Extensive use of Terraform for reproducible, version-controlled infrastructure
 - **CI/CD Pipelines**: GitLab CI integration for automated testing and deployment
-
-## License
-
-© 2025 Lehi Bonafe. All rights reserved.
