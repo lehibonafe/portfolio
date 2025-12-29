@@ -518,7 +518,7 @@ body.light-theme .theme-toggle:active .toggle-thumb {
 .tech-tags {
     display: flex;
     flex-wrap: wrap;
-    gap: 8px;
+    gap: 10px;
     margin-top: 16px;
 }
 
@@ -1004,7 +1004,7 @@ body.light-theme .certification-item a:hover {
 }
 
 .recommendation-card {
-    padding: 16px;
+    padding: 13px 16px;
     transition: all 0.3s ease;
     position: relative;
 }
