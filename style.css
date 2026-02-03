@@ -118,9 +118,6 @@ body.light-theme .profile-info .title {
     color: black;
 }
 
-body.light-theme .project-description {
-    color: black;
-}
 
 body.light-theme .profile-info h1 {
     color: black !important;
@@ -149,12 +146,18 @@ body.light-theme .certification-item {
     color: black;
 }
 
-body.light-theme .certification-item a {
-    color: black;
-}
+
 
 body.light-theme .certification-item span {
-    color: black !important;
+    color: #333 !important
+}
+
+body.light-theme .experience-company {
+    color: #333;
+}
+
+body.light-theme .beyond-coding p {
+    color: #333 !important;
 }
 
 /* Enhanced Theme Toggle Button */
@@ -713,7 +716,7 @@ body.light-theme .project-type {
 }
 
 body.light-theme .project-description {
-    color: black;
+    color: #333 !important;
 }
 
 body.light-theme .project-link {
@@ -721,7 +724,7 @@ body.light-theme .project-link {
 }
 
 body.light-theme .tech-badge {
-    color: #333;
+    color: #666;
     border: 1px solid #333;
 }
 
@@ -878,11 +881,12 @@ body.light-theme .connect-card:hover .connect-arrow {
     padding-left: 4px;
     text-decoration: none;
     transition: all 0.3s ease;
+    color: #d0d0d0;
 }
 
 .certification-item:hover {
     color: white;
-    text-shadow: 0 0 8px rgba(255, 255, 255, 0);
+    text-shadow: 0 0 8px rgba(255, 255, 255, 1);
 }
 
 .certification-item a:hover {
