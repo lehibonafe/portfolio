@@ -38,7 +38,6 @@ Multiple ways to connect:
 - GitHub: [@lehibonafe](https://github.com/lehibonafe)
 - LinkedIn: [lehi-bonafe](https://linkedin.com/in/lehi-bonafe)
 - Email: bonafe.lehi@gmail.com
-- Viber: +63 920 416 4495
 
 ## Portfolio Philosophy
 
