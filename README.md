@@ -29,9 +29,3 @@ My technical stack spans across multiple domains:
 - AWS CloudOps Engineer - Associate (In Progress)
 - Terraform Associate (In Progress)
 
-
-### 🤝 Connect & Contact
-Multiple ways to connect:
-- GitHub: [@lehibonafe](https://github.com/lehibonafe)
-- LinkedIn: [lehi-bonafe](https://linkedin.com/in/lehi-bonafe)
-- Email: bonafe.lehi@gmail.com
