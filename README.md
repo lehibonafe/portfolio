@@ -20,7 +20,7 @@ My technical stack spans across multiple domains:
 - **Operating Systems**: Linux administration
 
 ### 💼 Experience Timeline
-- **Site Reliability Engineer** at Electronics Transfer & Advance Processing Inc. (2025)
+- **Site Reliability Engineer** at Electronics Transfer & Advance Processing Inc. (2026)
 - **IT Analyst** at LausGroup of Companies (2024)
 
 ### 🏆 Certifications
