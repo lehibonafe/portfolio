@@ -112,6 +112,23 @@
             <div class="project-card">
                 <div class="project-info">
                     <div class="tech-stack">
+                        <span class="badge">AWS S3</span>
+                        <span class="badge">Route53</span>
+                        <span class="badge">CloudFront</span>
+                        <span class="badge">ACM</span>
+                    </div>
+                    <h3 class="project-title">S3 Static Website with Cloudfront</h3>
+                    <p class="project-description">Deployed a static website achieving fast global delivery, secure connections, and 99.99% uptime.</p>
+                    <a href="#" class="project-button">See More</a>
+                </div>
+                <div class="project-image">
+                    <img src="./images/s3-website-architecture.drawio.png" alt="S3 Static Website">
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-info">
+                    <div class="tech-stack">
                         <span class="badge">AWS</span>
                         <span class="badge">SSM</span>
                         <span class="badge">Bash</span>
@@ -122,22 +139,6 @@
                 </div>
                 <div class="project-image">
                     <img src="./images/aws.png" alt="SSH PEM Key Rotation">
-                </div>
-            </div>
-
-            <div class="project-card">
-                <div class="project-info">
-                    <div class="tech-stack">
-                        <span class="badge">AWS S3</span>
-                        <span class="badge">Route53</span>
-                        <span class="badge">CloudFront</span>
-                    </div>
-                    <h3 class="project-title">S3 Static Website with Route53 DNS</h3>
-                    <p class="project-description">Deployed a static portfolio site on S3 with CloudFront CDN and Route53 DNS, achieving fast global delivery and 99.99% uptime.</p>
-                    <a href="#" class="project-button">See More</a>
-                </div>
-                <div class="project-image">
-                    <img src="./images/aws.png" alt="S3 Static Website">
                 </div>
             </div>
 
@@ -204,6 +205,12 @@
             </div>
         </section>
     </main>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
+        <button class="lightbox-close" id="lightboxClose" aria-label="Close">&times;</button>
+        <img id="lightboxImg" src="" alt="">
+    </div>
 
     <script src="script.js"></script>
 </body>

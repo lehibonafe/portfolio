@@ -1,4 +1,3 @@
-// Show/hide page sections
 function showPage(pageName, pushState = true) {
     document.querySelectorAll('.page-section').forEach(section => {
         section.classList.remove('active');
@@ -22,14 +21,12 @@ function showPage(pageName, pushState = true) {
     }
 }
 
-// Theme toggle functionality
 function toggleTheme() {
     const body = document.body;
     body.classList.toggle('light-theme');
     localStorage.setItem('theme', body.classList.contains('light-theme') ? 'light' : 'dark');
 }
 
-// Initialize
 document.addEventListener('DOMContentLoaded', function() {
     document.querySelectorAll('.nav-item').forEach(link => {
         link.addEventListener('click', function(e) {
@@ -48,15 +45,39 @@ document.addEventListener('DOMContentLoaded', function() {
         document.body.classList.add('light-theme');
     }
 
-    // Handle browser back/forward
     window.addEventListener('popstate', function(e) {
         const page = e.state?.page || 'about';
         showPage(page, false);
     });
 
-    // Load page from URL path on initial load
-    const path = window.location.pathname.replace('/', '').trim();
+    // Load page from URL path on initial visit
     const validPages = ['about', 'projects', 'certs', 'resume'];
+    const path = window.location.pathname.replace(/^\//, '').trim();
     const initialPage = validPages.includes(path) ? path : 'about';
     showPage(initialPage, true);
+
+    // Lightbox
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightboxImg');
+
+    document.querySelectorAll('.project-image img').forEach(img => {
+        img.addEventListener('click', () => {
+            lightboxImg.src = img.src;
+            lightboxImg.alt = img.alt;
+            lightbox.classList.add('open');
+        });
+    });
+
+    function closeLightbox() {
+        lightbox.classList.remove('open');
+        lightboxImg.src = '';
+    }
+
+    document.getElementById('lightboxClose').addEventListener('click', closeLightbox);
+    lightbox.addEventListener('click', (e) => {
+        if (e.target === lightbox) closeLightbox();
+    });
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') closeLightbox();
+    });
 });
