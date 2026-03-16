@@ -14,7 +14,7 @@
                 <span>☁️</span>
                 <span>cloud-lehi</span>
             </div>
-            <nav>
+            <nav id="mainNav">
                 <a href="#" data-page="about" class="nav-item active">
                     <span>about</span>
                 </a>
@@ -28,15 +28,22 @@
                     <span>resume</span>
                 </a>
             </nav>
-        </div>
-        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
-            <div class="toggle-track">
-                <div class="toggle-thumb">
-                    <span class="dark-icon">🌙</span>
-                    <span class="light-icon">☀️</span>
-                </div>
+            <div class="header-right">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <div class="toggle-track">
+                        <div class="toggle-thumb">
+                            <span class="dark-icon">🌙</span>
+                            <span class="light-icon">☀️</span>
+                        </div>
+                    </div>
+                </button>
+                <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
             </div>
-        </button>
+        </div>
     </header>
 
     <main>
@@ -213,6 +220,7 @@
     </div>
 
     <script src="script.js"></script>
+    
 </body>
 </html>
 
