@@ -80,4 +80,45 @@ document.addEventListener('DOMContentLoaded', function() {
     document.addEventListener('keydown', (e) => {
         if (e.key === 'Escape') closeLightbox();
     });
+
+        // Hamburger menu toggle
+    const hamburger = document.getElementById('hamburger');
+    const mainNav = document.getElementById('mainNav');
+ 
+    function closeMenu() {
+        mainNav.classList.remove('open');
+        hamburger.classList.remove('open');
+        hamburger.setAttribute('aria-expanded', 'false');
+    }
+ 
+    function openMenu() {
+        mainNav.classList.add('open');
+        hamburger.classList.add('open');
+        hamburger.setAttribute('aria-expanded', 'true');
+    }
+ 
+    // Toggle open/close on hamburger click
+    hamburger.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const isOpen = mainNav.classList.contains('open');
+        isOpen ? closeMenu() : openMenu();
+    });
+ 
+    // Close menu when a nav item is clicked
+    mainNav.querySelectorAll('.nav-item').forEach(item => {
+        item.addEventListener('click', () => closeMenu());
+    });
+ 
+    // Close menu when clicking outside
+    document.addEventListener('click', (e) => {
+        if (!hamburger.contains(e.target) && !mainNav.contains(e.target)) {
+            closeMenu();
+        }
+    });
+ 
+    // Close menu on Escape key
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') closeMenu();
+    });
 });
+
