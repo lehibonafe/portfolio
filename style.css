@@ -411,11 +411,11 @@ body.light-theme .cta-button {
 
 .badge {
     display: inline-block;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 0.9rem;
     background-color: #0a0a0a;
     color: #e0e0e0;
     border-radius: 20px;
-    font-size: 0.85rem;
+    font-size: 0.83rem;
     font-weight: 500;
     margin-right: 0.5rem;
     margin-bottom: 0.5rem;
@@ -495,7 +495,7 @@ body.light-theme .badge:hover {
 
 .tech-stack {
     margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 0.3rem;
 }
 
 .logo-slider-section {
