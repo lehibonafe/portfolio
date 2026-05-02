@@ -24,7 +24,9 @@ function showPage(pageName, pushState = true) {
 function toggleTheme() {
     const body = document.body;
     body.classList.toggle('light-theme');
-    localStorage.setItem('theme', body.classList.contains('light-theme') ? 'light' : 'dark');
+    const isLight = body.classList.contains('light-theme');
+    localStorage.setItem('theme', isLight ? 'light' : 'dark');
+    document.querySelector('.theme-icon').textContent = isLight ? '🌙' : '☀️';
 }
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -43,6 +45,9 @@ document.addEventListener('DOMContentLoaded', function() {
     const savedTheme = localStorage.getItem('theme');
     if (savedTheme === 'light') {
         document.body.classList.add('light-theme');
+        document.querySelector('.theme-icon').textContent = '🌙';
+    } else {
+        document.querySelector('.theme-icon').textContent = '☀️';
     }
 
     window.addEventListener('popstate', function(e) {
