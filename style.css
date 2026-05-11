@@ -421,7 +421,7 @@ body.light-theme .ctb-button:hover {
 body.light-theme .badge {
     background-color: #d0d0d0;
     color: #2a2a2a;
-    border: 1px solid #c0c0c0;
+    border: 1px solid #d0d0d0;
 }
 
 
@@ -737,7 +737,7 @@ body.light-theme .github-button {
     background-color: #ffffff;
     color: #000000;
     border-radius: 50px;
-    font-size: 0.95rem;
+    font-size: .93rem;
     font-weight: 600;
     text-decoration: none;
     width: fit-content;
